@@ -30,6 +30,9 @@ try{
         $comando ->execute();
 
         echo "Cadastro realizado com sucesso";
+
+        // fechar
+        $con = null;
     
 
 }catch(PDOException $erro){
