@@ -9,32 +9,34 @@
 </head>
 <body>
     <div id="container">
-        <h2>Super Mercado</h2>
-        <form action="backend/_cadastrar_produtos.php" method="post">
-            <div id="pai">
-                <div>
-                    <label for="nome">Nome</label>
-                    <input class="text" type="text" id="nome" name="nome" required>
+        <div id="base-container">
+            <h2>Super Mercado</h2>
+            <form action="backend/_cadastrar_produtos.php" method="post">
+                <div id="pai">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input class="text" type="text" id="nome" name="nome" required>
+                    </div>
+                    <div>
+                        <label for="categoria">Categoria</label>
+                        <input class="text" type="text" id="categoria" name="categoria" required>
+                    </div>
+                    <div>
+                        <label for="">Fabricante</label>
+                        <input class="text" type="text" id="fabricante" name="fabricante" required>
+                    </div>
+                    <div>
+                        <label for="valor">Valor</label>
+                        <input class="text" type="number" id="valor" name="valor" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="categoria">Categoria</label>
-                    <input class="text" type="text" id="categoria" name="categoria" required>
+                <div id="botao">
+                    <input type="submit" value="Cadastrar">
                 </div>
-                <div>
-                    <label for="">Fabricante</label>
-                    <input class="text" type="text" id="fabricante" name="fabricante" required>
-                </div>
-                <div>
-                    <label for="valor">Valor</label>
-                    <input class="text" type="number" id="valor" name="valor" required>
-                </div>
-            </div>
-            <div id="botao">
-                <input type="submit" value="Cadastrar">
-            </div>
 
-            
-        </form>
+                
+            </form>x
+        </div>
     </div>
     
 </body>
