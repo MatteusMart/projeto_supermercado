@@ -1,3 +1,25 @@
+<?php
+
+include('backend/conexao.php');
+
+try{
+
+    $sql = "SELECT * FROM tb_viagens";
+
+    $comando = $con->prepare($sql);
+
+    $comando->execute();
+
+
+    $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+
+}catch(PDOException $erro){
+    echo $erro->getMessage();
+    }
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
