@@ -57,3 +57,39 @@ div#botao input{
     border: 2px solid black;
 }
 
+/* listar produtos */
+
+.titulo-listar{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#grid-produtos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.img-listar{
+    width: 100%;
+}
+
+.figure-listar{
+    border: 2px solid black;
+}
+
+.figcaption-listar{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(221, 221, 221);
+}
+
+.btn-listar{
+    display: grid;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #59d259;
+    border: 2px solid black;
+}

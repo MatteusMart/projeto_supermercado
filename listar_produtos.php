@@ -4,7 +4,7 @@ include('backend/conexao.php');
 
 try{
 
-    $sql = "SELECT * FROM tb_viagens";
+    $sql = "SELECT * FROM tb_produtos";
 
     $comando = $con->prepare($sql);
 
@@ -12,6 +12,10 @@ try{
 
 
     $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    // echo "<pre>";
+    // var_dump($dados);
+    // echo "</pre>";
 
 
 }catch(PDOException $erro){
@@ -32,17 +36,24 @@ try{
 </head>
 <body>
     <div id="container">
-    <h3>Listar produtos</h3>
-        <figure>
-            <img src="img/viagem-faltando.png" alt="">
-            <figcaption>
-                <h3>nome</h3>
-                <h3>categoria</h3>
-                <h3>fabricante</h3>
-                <h3>R$</h3>
-                <small></small>
-            </figcaption>
-        </figure>
+    <h3 class="titulo-listar">Listar produtos</h3>
+        <div id="grid-produtos">
+            <?php
+            foreach($dados as $pro):
+            ?>
+            <figure class="figure-listar">
+                <img src="img/viagem-faltando.png" alt="" class="img-listar">
+                <figcaption class="figcaption-listar">
+                    <h3><?php echo $pro['nome']?></h3>
+                    <h3><?php echo $pro['categoria']?></h3>
+                    <h3><?php echo $pro['fabricante']?></h3>
+                    <h3>R$ <?php echo $pro['valor']?>,00</h3>
+                    <small></small>
+                    <button class="btn-listar">Comprar</button>
+                </figcaption>
+            </figure>
+            <?php endforeach?>
+        </div>
     </div>
     
 </body>
