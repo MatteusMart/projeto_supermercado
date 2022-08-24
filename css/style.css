@@ -67,8 +67,9 @@ div#botao input{
 
 #grid-produtos{
     display: grid;
+    padding: 20px;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    gap: 50px;
 }
 
 .img-listar{
@@ -77,6 +78,8 @@ div#botao input{
 
 .figure-listar{
     border: 2px solid black;
+    border-radius: 6px;
+    width: 500px;
 }
 
 .figcaption-listar{

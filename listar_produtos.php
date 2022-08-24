@@ -44,10 +44,10 @@ try{
             <figure class="figure-listar">
                 <img src="img/viagem-faltando.png" alt="" class="img-listar">
                 <figcaption class="figcaption-listar">
-                    <h3><?php echo $pro['nome']?></h3>
+                    <h3><?php echo $pro['produto']?></h3>
                     <h3><?php echo $pro['categoria']?></h3>
                     <h3><?php echo $pro['fabricante']?></h3>
-                    <h3>R$ <?php echo $pro['valor']?>,00</h3>
+                    <h3>R$ <?php echo $pro['preco']?></h3>
                     <small></small>
                     <button class="btn-listar">Comprar</button>
                 </figcaption>

@@ -45,10 +45,10 @@
                 ?>
                 <tr>
                     <td><?php echo $produ['id'];?></td>
-                    <td><?php echo $produ['nome'];?></td>
+                    <td><?php echo $produ['produto'];?></td>
                     <td><?php echo $produ['categoria'];?></td>
                     <td><?php echo $produ['fabricante'];?></td>
-                    <td>R$<?php echo $produ['valor'];?></td>
+                    <td>R$<?php echo $produ['preco'];?></td>
                     <td>Editar</td>
                     <td>
                         <a href="../backend/_deletar_produtos.php?id=<?php echo $produ['id'];?>"> Excluir</a>
